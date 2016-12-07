@@ -14,3 +14,8 @@
     background-color: #7ec34a;
     /*opacity: 3;*/
 }
+body{
+    background-image: url('../source/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

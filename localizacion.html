@@ -4,7 +4,7 @@
 		<title>ASR</title>
 		<meta charset="utf-8">
 
-		<link rel="stylesheet" type="text/css" href="style/news.css">
+		<link rel="stylesheet" type="text/css" href="style/main.css">
 		<link rel="stylesheet" type="text/css" href="style/banner.css">
 		<script type="text/javascript" src="script/nav.js"></script>
 
@@ -28,18 +28,46 @@
 			</div>
 			<nav class="navigator col-12">
 				<ul class="topnav" id="myTopnav">
-					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html"><img class="home" src="source/home.png"></a></li>
 					<li><a href="productos.html">Productos</a></li>
 					<li><a href="aceite.html" class="dropbtn">Aceite</a></li>
 					<li><a href="quienesSomos.html">Quienes somos</a></li>
 					<li><a class="active" href="localizacion.html">Localización</a></li>
 					<li><a href="contacto.html">Contacto</a></li>
 					  <li class="icon">
-					    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+					    <a href="javascript:void(0);" onclick="myFunction()">☰</a>
 					  </li>
 				</ul>
 			</nav>
 		</div>
+		<div class="bg col-11" style="width: 50%; margin: 0 auto; background-color:rgba(255,255,0,0.3); padding-bottom: 20px">
+			<div id="map" style="width:95%;height:600px;margin-left: 2.5%;margin-top: 20px;display: inline-block;background:yellow"></div>
+
+			<script>
+				function myMap() {
+					var mapCanvas = document.getElementById("map");
+					var mapOptions = {
+					center: new google.maps.LatLng(37.19235211497089,-3.616599440574646), zoom: 13
+					};
+					var geocoder = new google.maps.Geocoder;
+        			var infowindow = new google.maps.InfoWindow;
+        			//geocodeLatLng(geocoder, map, infowindow);
+					var map = new google.maps.Map(mapCanvas, mapOptions);
+					var marker = new google.maps.Marker({
+						position: {lat: 37.19235211497089, lng: -3.616599440574646},
+						map: map,
+						draggable: true,
+						animation: google.maps.Animation.DROP
+			        });
+				}
+				window.onload = function() {
+				  myMap();
+				}
+			</script>
+
+			<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy0l2O_cH19F1Eq9658p_-T_aSp94cBuc&callback=initMap"></script>
+		</div>
+
 		<footer class="footer col-12">
 			
 		</footer>
