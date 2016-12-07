@@ -1,0 +1,16 @@
+.news {
+    height: 250px;
+    background-color: #333;
+    display: block;
+    margin-bottom: 0px;
+    /*: 0.6;*/
+}
+
+.new {
+    padding: 20px;
+    height: 180px;
+    float: left;
+    margin: 15px 0px 15px 3.5%;
+    background-color: #7ec34a;
+    /*opacity: 3;*/
+}
