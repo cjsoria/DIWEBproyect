@@ -6,9 +6,11 @@
 
 		<link rel="stylesheet" type="text/css" href="style/main.css">
 		<link rel="stylesheet" type="text/css" href="style/banner.css">
+		<link rel="stylesheet" type="text/css" href="style/form.css">
 		<link rel="stylesheet" type="text/css" href="style/footer.css">
+		<script type="text/javascript" src="script/slider.js"></script>
 		<script type="text/javascript" src="script/nav.js"></script>
-		<script type="text/javascript" src="script/map.js"></script>
+
 
 		<link rel="shortcut icon" type="image/x-icon" href="source/logo.png" />
 
@@ -34,7 +36,7 @@
 					<li><a href="productos.html">Productos</a></li>
 					<li><a href="aceite.html" class="dropbtn">Aceite</a></li>
 					<li><a href="quienesSomos.html">Quienes somos</a></li>
-					<li><a class="active" href="localizacion.html">Localización</a></li>
+					<li><a href="localizacion.html">Localización</a></li>
 					<li><a href="contacto.html">Contacto</a></li>
 					  <li class="icon">
 					    <a href="javascript:void(0);" onclick="myFunction()">☰</a>
@@ -42,10 +44,31 @@
 				</ul>
 			</nav>
 		</div>
-		<div class="bg map col-5">
-			<div id="map"></div>
+
+		<div class="bg form col-5">
+			<form >
+				<div class="container">
+				<span>Nombre:</span> <input class="box" type="text" name="name" placeholder="Nombre"><br>
+				</div>
+				<div class="container">
+				<span>Apellidos:</span> <input class="box" type="text" name="name" placeholder="Apellidos"><br>
+				</div>
+				<div class="container">
+				<span>Usuario:</span> <input class="box" type="text" name="name" placeholder="Nombre de usuario"><br>
+				</div>
+				<div class="container">
+				<span>Correo Electrónico:</span> <input class="box" type="email" placeholder="E-mail" name="email"><br>
+				</div>
+				<div class="container">
+				<span>Contraseña:</span> <input class="box" type="password" placeholder="Contraseña" name="email"><br>
+				</div>
+
+				<div class="buttons">
+					<button id="submit" value="aceptar">Enviar datos</button>
+					<button id="reset" value="delete">Borrar datos</button>
+				</div>
+			</form>
 		</div>
-			<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy0l2O_cH19F1Eq9658p_-T_aSp94cBuc&callback=initMap"></script>
 
 		<footer class="col-12">
 			<div class="section col-2">
@@ -68,6 +91,5 @@
 				<a href="#">C/Cerro del Molino s/n Martos, Jaén</a>
 			</div>
 		</footer>
-		
 	</body>
 </html>

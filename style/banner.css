@@ -24,6 +24,7 @@ body {
 }
 .header {
 	background-image: url("../source/banner.jpg");
+  border-bottom: 2px solid #000;
 }
 
 .containerNav{
@@ -67,9 +68,15 @@ ul.topnav {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+
 }
 
 ul.topnav li {float: left;}
+
+a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
 
 ul.topnav li a {
   display: inline-block;
@@ -97,6 +104,7 @@ ul.topnav li.icon {display: none;}
 
 .navigator {
 	display: inline-block;
+
 }
 
 .container-seeker {
@@ -120,27 +128,19 @@ ul.topnav li.icon {display: none;}
     display: inline-block;
 }
 
-.footer {
-    height: 25px;
-    margin-top: 0px;
-    vertical-align: top;
-    background-color: #7ec34a;
-    color: white;
-}
 
-@media screen and (max-width:680px) {
+
+@media screen and (min-width:320px)
+and (max-width:640px) {
   ul.topnav li:not(:first-child) {display: none;}
   ul.topnav li.icon {
     float: right;
     display: inline-block;
   }
   .login{
-    width:58.33%;
+    width:66.66%;
   }
-}
-
-@media screen and (max-width:680px) {
-  ul.topnav.responsive {position: relative;}
+    ul.topnav.responsive {position: relative;}
   ul.topnav.responsive li.icon {
     position: absolute;
     right: 0;
@@ -155,3 +155,29 @@ ul.topnav li.icon {display: none;}
     text-align: left;
   }
 }
+@media screen and (min-width:641px)
+and (max-width:1240px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+  .login{
+    width:58.33%;
+  }
+    ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
