@@ -35,27 +35,27 @@ body {
 
 .logo {
 	float: left;
-	margin: 10px;
+	margin-left: 3px;
+  margin-top: 3px;
+  margin-bottom: 5px;
     width: 110px;
     height: 80px;
 }
 
 .login {
-    margin: 10px;
     margin-top: 20px;
 
 }
 
 .input {
-    
-	margin: 5px;
 	border-radius: 10px;
-	margin-left: 5px;
+  margin-bottom: 3px;
 }
 
 .button {
 
-	margin: 5px;
+	margin-left: 3px;
+  margin-bottom: 3px;
 	background-color: #3B5998;
 	color: #FFFFFF;
 	border-radius: 10px;
@@ -138,7 +138,7 @@ and (max-width:640px) {
     display: inline-block;
   }
   .login{
-    width:66.66%;
+    width:75%;
   }
     ul.topnav.responsive {position: relative;}
   ul.topnav.responsive li.icon {

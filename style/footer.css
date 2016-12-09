@@ -1,3 +1,8 @@
+.footer{
+
+    display: table-row;
+}
+
 footer {
 	bottom: 0;
 	border-top: 2px solid #000;
